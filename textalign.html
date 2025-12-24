@@ -1,21 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        p{
-            text-align: left;
-        }
-        h5{
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <h5>ABESEC</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur aliquid natus, esse optio obcaecati inventore voluptatem. Esse at, error soluta quia aut, dolorum ea a iste enim, unde eaque voluptates.</p>
-    <p>cLorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat architecto aperiam rerum beatae iure omnis quibusdam dolorem distinctio, ducimus magnam.</p>
-</body>
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Responsive Product Grid</title> 
+  <style> 
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      background: #c01c1c; 
+      padding: 20px; 
+    } 
+ 
+    h2 { 
+      text-align: center; 
+      margin-bottom: 20px;
+    }
+    /* Product grid */ 
+    .grid { 
+      display: grid; 
+      grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */ 
+      gap: 20px; 
+    } 
+ 
+    /* Product card */ 
+    .card { 
+      background: #50de9a; 
+      border-radius: 8px; 
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+      padding: 16px; 
+      text-align: center; 
+    } 
+ 
+    .card img { 
+      width: 100%; 
+      height: 150px; 
+      object-fit: cover; 
+      border-radius: 6px; 
+      margin-bottom: 10px; 
+    } 
+ 
+    .card h3 { 
+      font-size: 18px; 
+      margin: 8px 0; 
+    } 
+ 
+    .card p { 
+      font-size: 14px; 
+      color: #555; 
+      margin: 4px 0; 
+    } 
+ 
+    .price { 
+      font-weight: bold; 
+      color: #007bff; 
+    } 
+ 
+    /* Responsive Breakpoints */ 
+    @media (max-width: 1024px) { 
+      .grid { 
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */ 
+      } 
+    } 
+ 
+    @media (max-width: 600px) { 
+      .grid { 
+        grid-template-columns: 1fr; /* 1 column for mobile */ 
+      } 
+    } 
+  </style> 
+</head> 
+<body> 
+  <h2>Socialist Online Store</h2> 
+<div class="grid"> 
+    <div class="card"; style="color: red;"> 
+      <img src="https://www.stpgoods.com/media/catalog/product/cache/ac85020a872a7ec96fac5ac2d8e0a512/1/0/107947_2.jpg" alt="Product 1"> 
+      <h3>Product 1</h3> 
+      <p>High-quality Shirt with highly durable fabric</p> 
+      <p class="price">₹799</p> 
+    </div> 
+ 
+    <div class="card" style="color: black;"> 
+      <img src=" https://i.ebayimg.com/images/g/cOgAAOSwl3Bmg~g-/s-l1600.webp" alt="Product 2"> 
+      <h3>Product 2</h3> 
+      <p>Durable and sturdy floor mat</p> 
+      <p class="price">₹299</p> 
+    </div> 
+ 
+    <div class="card" style="color: black"> 
+      <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSvVhfrfqU0PFpqyOji-fGzsPe7tefazCCMZO8ViwzmVGYmkYQsReAHJZCJAx9jf4rJJnVdxJXCfeiGVxamy3pUFHsDP6Bo65BtcEWjPkZLWYYPletKtoTQfw" alt="Product 3"> 
+      <h3>Product 3</h3> 
+      <p>Lightweight and comfortable sneakers</p> 
+      <p class="price">₹1,299</p> 
+    </div> 
+ 
+    <div class="card" style="color: red;"> 
+      <img src="https://m.media-amazon.com/images/I/71vU2OV-jAL._SX679_.jpg" alt="Product 4"> 
+      <h3>Product 4</h3> 
+      <p>Trendy and warm soviet style cap</p> 
+      <p class="price">₹999</p> 
+    </div> 
+  </div> 
+</body> 
 </html>
