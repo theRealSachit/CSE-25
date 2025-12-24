@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Experiment - Flexbox Student Profile Card</title> 
+<style> 
+body{ 
+font-family: Arial, sans-serif; 
+margin: 20px; 
+background: #248bd0; 
+} 
+    h2{text-align: center;} 
+    .container{ 
+      display: flex;                  /* Flexbox container */ 
+      flex-direction: row;            /* Arrange in a row */ 
+      justify-content: center;        /* Center horizontally */ 
+      align-items: center;            /* Align vertically */ 
+      gap: 20px;                      /* Space between cards */ 
+      flex-wrap: wrap;                /* Wrap to next line if needed */ 
+    } 
+    .card{ 
+      background: #21ca1f; 
+      border-radius: 8px; 
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+      width: 220px; 
+      text-align: center; 
+      padding: 16px; 
+    } 
+    .avatar{ 
+      width: 70px; height: 70px; 
+      background: #e92b3e; color: #33710a; 
+      border-radius: 50%; 
+      display: flex; justify-content: center; align-items: center; 
+      font-size: 20px; margin: 0 auto 12px; 
+    } 
+    .name{ font-weight: bold; font-size: 18px; } 
+    .detail{ font-size: 14px; color: #555555; margin: 2px 0; } 
+  </style> 
+</head> 
+<body> 
+  <h2>Student Profile Cards</h2> 
+  <div class="container"> 
+    <div class="card"> 
+      <div class="avatar">SM</div> 
+      <div class="name">Sachit Mishra</div> 
+      <div class="detail">B.Tech - CSE</div> 
+      <div class="detail">Roll No: 2025B01010227</div> 
+      <div class="detail">1st Year</div> 
+    </div> 
+    <div class="card"> 
+      <div class="avatar">SP</div> 
+      <div class="name">Sachin Patel</div> 
+      <div class="detail">B.Tech - IT</div> 
+      <div class="detail">Roll No: 2025B01010027</div> 
+      <div class="detail">1st Year</div> 
+    </div> 
+    <div class="card"> 
+      <div class="avatar">SJ</div> 
+      <div class="name">Samyak Jain</div> 
+      <div class="detail">B.Tech - ECE</div> 
+      <div class="detail">Roll No: 2025B01010380</div> 
+      <div class="detail">1st Year</div> 
+    </div> 
+  </div> 
+</body> 
+</html>
