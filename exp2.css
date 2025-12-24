@@ -1,0 +1,67 @@
+/* Block Example */ 
+header { 
+  display: block; 
+  background: rgb(211, 211, 211); 
+  color: #1a8a2f; /* green header text */
+  padding: 10px; 
+  text-align: center; 
+} 
+ 
+/* Inline Example */ 
+header span { 
+  display: inline; 
+} 
+ 
+/* Inline-block Navigation */ 
+.inline-block-menu ul { 
+  list-style: none;
+  padding: 0; 
+} 
+.inline-block-menu li { 
+  color:green;
+  display: inline-block; 
+  margin-right: 10px; 
+} 
+.inline-block-menu a { 
+  text-decoration: none; 
+  padding: 5px; 
+  background: red ; 
+  color: brown; /* link text color */
+  border-radius: 4px;
+  transition: background 150ms ease, transform 150ms ease;
+}
+.inline-block-menu a:hover,
+.inline-block-menu a:focus {
+  background: #0aa3a3; /* slightly darker on hover */
+  transform: translateY(-1px);
+  outline: none;
+}
+ 
+/* Float Navigation */ 
+.float-menu ul { 
+  list-style: none; 
+  padding: 0; 
+} 
+.float-menu li { 
+  float: left; 
+  margin-right: 10px; 
+} 
+.float-menu a { 
+  text-decoration: none; 
+  padding: 5px; 
+  background: pink; 
+  color: #ffffff; /* link text color */
+  border-radius: 4px;
+  transition: background 150ms ease, transform 150ms ease;
+}
+.float-menu a:hover,
+.float-menu a:focus {
+  background: #0abf22; /* slightly darker on hover */
+  transform: translateY(-1px);
+  outline: none;
+}
+ 
+/* Clear Example */ 
+.clear { 
+  clear: both; 
+} 
